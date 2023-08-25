@@ -10,23 +10,15 @@ const Layout = () => {
         <>
             <Navbar>
                 <Nav>
-                    {/*<Nav.Item className="nav-item">*/}
-                    {/*    <Link className="nav-link" to="/">Login</Link>*/}
-                    {/*</Nav.Item>*/}
-                    {/*<Nav.Item className="nav-item">*/}
-                    {/*    <Link className="nav-link" to={LoginStatus !== "notLoggedIn" ?"/myPantries":"#"}>MyPantry</Link>*/}
-                    {/*</Nav.Item>*/}
-                    {/*<Nav.Item className="nav-item">*/}
-                    {/*    <Link className="nav-link" to={LoginStatus !== "notLoggedIn" ?"/pantry":"#"}>Pantry</Link>*/}
-                    {/*</Nav.Item>*/}
-                    {/*<Nav.Item className="nav-item">*/}
-                    {/*    <Link className="nav-link" to={LoginStatus !== "notLoggedIn" ?"/item":"#"}>Items</Link>*/}
-                    {/*</Nav.Item>*/}
+                    <Nav.Item className="nav-item">
+                        <Link className="nav-link" to="/Main">Main</Link>
+                    </Nav.Item>
+
                 </Nav>
             </Navbar>
             <p>THe Layout is working.</p>
+            {display}
         </>
-
     )
 };
 

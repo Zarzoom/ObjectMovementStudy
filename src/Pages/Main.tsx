@@ -1,16 +1,24 @@
 import {Header, Content, Panel, Placeholder, Col} from 'rsuite';
+import {Logo} from "../Components/Main/Logo"
 
-<div>
-    <Header>
-        <Panel>
-            <p>Sophia Seely</p>
-        </Panel>
-    </Header>
-    <Content>
-        <Col md={6} sm={12}>
-            <Panel bordered header="Card title">
-                <Placeholder.Paragraph />
+const Main = () => {
+    return(
+    <div>
+        <Header>
+            <Panel>
+                <Logo></Logo>
             </Panel>
-        </Col>
-    </Content>
-</div>
+        </Header>
+        <Content>
+            <Col md={6} sm={12}>
+                <Panel bordered header="Card title">
+                    <Placeholder.Paragraph />
+                </Panel>
+            </Col>
+        </Content>
+    </div>
+    )
+}
+
+
+export default Main;

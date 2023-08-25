@@ -6,6 +6,7 @@ import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from "./Pages/Layout";
+import Main from "./Pages/Main";
 
 
 const router = createBrowserRouter([
@@ -13,15 +14,17 @@ const router = createBrowserRouter([
         path: "/",
         element: <Layout/>,
         // loader: put something here,
-        // children: [
-        //     {
-        //         path: "team",
-        //         element: <Team />,
+        children: [
+            {
+        path: "/Main",
+        element: <Main/>,
         //         loader: teamLoader,
-        //     },
-        // ],
+            },
+        ],
+
     },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")as HTMLElement).render(
     <RouterProvider router={router} />
 );
