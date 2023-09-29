@@ -1,5 +1,6 @@
 import {Header, Content, Panel, Placeholder, Col} from 'rsuite';
 import {Logo} from "../Components/Main/Logo"
+import {Portfolio} from "../Components/Main/Portfolio"
 
 const Main = () => {
     return(
@@ -10,11 +11,7 @@ const Main = () => {
             </Panel>
         </Header>
         <Content>
-            <Col md={6} sm={12}>
-                <Panel bordered header="Card title">
-                    <Placeholder.Paragraph />
-                </Panel>
-            </Col>
+            <Portfolio></Portfolio>
         </Content>
     </div>
     )
