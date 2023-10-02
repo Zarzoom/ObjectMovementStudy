@@ -16,7 +16,6 @@ const Layout = () => {
 
                 </Nav>
             </Navbar>
-            <p>THe Layout is working.</p>
             {display}
         </>
     )
